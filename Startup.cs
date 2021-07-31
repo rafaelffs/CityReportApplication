@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System;
+using System.IO;
+using System.Reflection;
 
 namespace CityReportApplication
 {
@@ -33,6 +36,7 @@ namespace CityReportApplication
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CityReportApplication", Version = "v1" });
+                c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{ Assembly.GetExecutingAssembly().GetName().Name}.xml"));
             });
             #region .   AutoMapper   .
             var mapperConfig = new MapperConfiguration(mc =>
@@ -42,6 +46,7 @@ namespace CityReportApplication
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
             #endregion
+
             services.AddHttpClient();
             services.AddScoped<IWeatherForecastService, WeatherForecastService>();
             services.AddScoped<IRapidAPIService, RapidAPIService>();

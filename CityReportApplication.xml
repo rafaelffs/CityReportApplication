@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CityReportApplication</name>
+    </assembly>
+    <members>
+        <member name="M:CityReportApplication.Controllers.WeatherForecastController.GetLocation(System.String)">
+            <summary>
+            Returns a location based on the input city
+            </summary>
+            <param name="city"></param>
+            <returns>LocationViewModel</returns>
+        </member>
+        <member name="M:CityReportApplication.Controllers.WeatherForecastController.GetCurrentCondition(System.String)">
+            <summary>
+            Returns the current condition based on the input city
+            </summary>
+            <param name="city"></param>
+            <returns>CurrentConditionViewModel</returns>
+        </member>
+        <member name="M:CityReportApplication.Controllers.WeatherForecastController.GetAstronomy(System.String)">
+            <summary>
+            Returns the astronomy based on the input city
+            </summary>
+            <param name="city"></param>
+            <returns>AstronomyViewModel</returns>
+        </member>
+        <member name="M:CityReportApplication.Controllers.WeatherForecastController.GetAllCities">
+            <summary>
+            Returns the list of default cities
+            </summary>
+            <returns>string[]</returns>
+        </member>
+        <member name="M:CityReportApplication.Controllers.WeatherForecastController.GetCityCompleteData(System.String)">
+            <summary>
+            Returns a location based on the input city with current condition and astronomy data
+            </summary>
+            <param name="city"></param>
+            <returns>LocationViewModel</returns>
+        </member>
+    </members>
+</doc>
