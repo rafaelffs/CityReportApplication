@@ -10,7 +10,7 @@ Navigate to the project folder `\CityReportApplication` and run "docker-compose 
 The API should be available in `http://localhost:5000/`
 
 ### Swagger
-http://localhost:5000/swagger`
+`http://localhost:5000/swagger`
 
 ### UI solution
 Download the UI application - `https://github.com/rafaelffs/CityReportApplicationUI`
