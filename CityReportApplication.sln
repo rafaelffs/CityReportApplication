@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityReportApplication", "CityReportApplication.csproj", "{9FC92D1F-4C62-4884-9B63-D8E9F1F6703E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityReportTest", "..\CityReportTest\CityReportTest.csproj", "{F6EA9D46-DAAD-4AE2-B57D-9342C685915C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FC92D1F-4C62-4884-9B63-D8E9F1F6703E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC92D1F-4C62-4884-9B63-D8E9F1F6703E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC92D1F-4C62-4884-9B63-D8E9F1F6703E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC92D1F-4C62-4884-9B63-D8E9F1F6703E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6EA9D46-DAAD-4AE2-B57D-9342C685915C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EA9D46-DAAD-4AE2-B57D-9342C685915C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EA9D46-DAAD-4AE2-B57D-9342C685915C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EA9D46-DAAD-4AE2-B57D-9342C685915C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {804A044B-8EAB-4185-B1D8-46C3173CD65B}
+	EndGlobalSection
+EndGlobal

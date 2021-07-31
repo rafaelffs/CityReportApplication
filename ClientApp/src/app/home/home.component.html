@@ -1,0 +1,90 @@
+<h1 id="tableLabel">AA Ireland - City Report</h1>
+
+<p *ngIf="!cityList"><em>Loading...</em></p>
+
+<div *ngIf="cityList">
+  <div class="container">
+    City: <select #cityselected (change)="changeCitySelected(cityselected.value)" [(ngModel)]='citySelect' class='form-control select form-select-sm'>
+      <option *ngFor="let city of cityList;" [value]="city">
+        {{city}}
+      </option>
+    </select>
+  </div>
+  <div *ngIf="location" class="container">
+    <div class="row item">
+      <div class="col-sm">
+        Weather:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.currentCondition.temperature }} ({{location.currentCondition.weatherCondition}}) <img class="weatherIcon" src="{{location.currentCondition.weatherIcon}}" />
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Region:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.region }}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Country:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.country }}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Latitude:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.latitude }}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Longitude:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.longitude}}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Date/Time:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.currentDateTime}}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Sunrise:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.astronomy.sunrise}}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Sunset:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.astronomy.sunset}}
+      </div>
+    </div>
+    <div class="row item">
+      <div class="col-sm">
+        Moon Phase:
+      </div>
+      <div class="col-sm font-weight-bold">
+        {{location.astronomy.moonPhase}}
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!location && citySelect">
+    <em>Loading...</em>
+  </div>
+</div>
