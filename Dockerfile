@@ -2,8 +2,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0.103 AS build
 WORKDIR /build
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
-RUN apt-get install -y nodejs
 
 # copy csproj and restore as distinct layers
 COPY ./*.csproj .
